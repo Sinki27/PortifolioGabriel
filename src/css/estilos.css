@@ -7,7 +7,7 @@ body {
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
 	max-width: 1120px;
-	background: linear-gradient(150deg, rgba(0,16,50,1), rgba(15,119,162,1));
+	background: linear-gradient(150deg, rgb(30, 36, 39), rgb(71, 78, 82));
 	background-size: 120% 120%;
 }
 
@@ -33,6 +33,11 @@ body {
 .cabecalho a:hover .logo {
 	color: #9443d8;
 	border: 2px solid #9443d8;
+}
+
+.cabecalho .menu ul {
+	display: flex;
+	flex-direction: row;
 }
 
 .cabecalho .menu li a {
@@ -95,7 +100,7 @@ body {
 
 .home .redes-sociais a i:hover {
 	color: #9443d8;
-	border: 1px solid #9443d8;
+	border: 1px solid #7743d8;
 	transform: scale(1.1);
 }
 
@@ -110,7 +115,7 @@ body {
 }
 
 .home .foto.sombra-interna {
-	background: linear-gradient(to right, #8a35c8, #18c063, #00eea2);
+	background: linear-gradient(to right, #0c2249, #450961, #8300ee);
 	background-size: 180% 180%;
 	animation: gradient-animation 5s ease infinite;
 }
