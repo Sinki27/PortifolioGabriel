@@ -115,6 +115,55 @@ body {
 	animation: gradient-animation 5s ease infinite;
 }
 
+/* --- SEÇÃO HABILIDADES --- */
+.habilidades {
+	padding: 40px 15px;
+	text-align: center;
+}
+
+.habilidades .titulo {
+	font-size: 40px;
+	margin-bottom: 30px;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.container-habilidades {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+.card-tech {
+	background: rgba(4, 2, 3, 0.6);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 12px;
+	padding: 20px;
+	width: 120px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+	transition: 0.3s ease;
+}
+
+.card-tech i {
+	font-size: 45px;
+}
+
+.card-tech span {
+	font-size: 14px;
+	font-weight: 500;
+}
+
+.card-tech:hover {
+	transform: translateY(-8px);
+	border-color: #9443d8;
+	box-shadow: 0 8px 20px rgba(148, 67, 216, 0.3);
+}
+
+/* --- SEÇÃO PROJETOS --- */
 .projetos {
 	padding: 70px 0 70px;
 }
@@ -170,6 +219,20 @@ body {
 	opacity: 0;
 	transition: 0.3s;
 	padding: 20px;
+}
+
+/* --- AJUSTES NOS INFORMATIVOS DOS PROJETOS --- */
+.projetos .projeto .informacoes-projeto .techs {
+	color: #00eea2;
+	font-size: 13px;
+	margin-top: 10px;
+	font-weight: 600;
+}
+
+.projetos .projeto .informacoes-projeto .link {
+	margin-top: 15px;
+	font-size: 14px;
+	color: #fff;
 }
 
 .projetos .container-projetos .projeto:hover .informacoes-projeto {
