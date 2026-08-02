@@ -23,7 +23,7 @@ body {
 	height: 65px;
 	border-radius: 50%;
 	border: 2px solid #fff;
-	text-decoration: underline;
+	text-decoration: none;
 	text-align: center;
 	line-height: 55px;
 	font-family: "Raleway", sans-serif;
@@ -282,4 +282,93 @@ body {
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+/* --- ESTILOS DO RODAPÉ (FOOTER) --- */
+.rodape {
+	background: rgba(2, 8, 26, 0.85);
+	border-top: 1px solid rgba(148, 67, 216, 0.3);
+	padding: 50px 20px 20px;
+	margin-top: 60px;
+	backdrop-filter: blur(10px);
+}
+
+.rodape .container-rodape {
+	max-width: 1120px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 30px;
+	padding-bottom: 30px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.rodape .logo-rodape a {
+	font-family: "Raleway", sans-serif;
+	font-size: 28px;
+	font-weight: 700;
+	color: #fff;
+	background: linear-gradient(90deg, #9443d8, #00eea2);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.rodape .logo-rodape p {
+	font-size: 14px;
+	color: #a0aab8;
+	margin-top: 5px;
+}
+
+.rodape .links-rodape {
+	display: flex;
+	gap: 25px;
+}
+
+.rodape .links-rodape a {
+	font-size: 16px;
+	color: #e0e6ed;
+	transition: color 0.3s ease;
+}
+
+.rodape .links-rodape a:hover {
+	color: #00eea2;
+}
+
+.rodape .redes-rodape {
+	display: flex;
+	gap: 15px;
+}
+
+.rodape .redes-rodape a i {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 18px;
+	color: #fff;
+	transition: all 0.3s ease;
+}
+
+.rodape .redes-rodape a i:hover {
+	background-color: #9443d8;
+	border-color: #9443d8;
+	color: #fff;
+	transform: translateY(-3px);
+	box-shadow: 0 5px 15px rgba(148, 67, 216, 0.4);
+}
+
+.rodape .copyright {
+	text-align: center;
+	padding-top: 20px;
+	font-size: 14px;
+	color: #a0aab8;
+}
+
+.rodape .copyright strong {
+	color: #fff;
 }
