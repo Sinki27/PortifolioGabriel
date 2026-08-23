@@ -6,14 +6,24 @@ html {
 body {
 	font-family: "Poppins", sans-serif;
 	margin: 0 auto;
-	max-width: 1120px;
-	background: linear-gradient(150deg, rgb(30, 36, 39), rgb(71, 78, 82));
+	max-width: 100%;
+	background: linear-gradient(150deg, rgba(22, 25, 27, 0.829), rgb(127, 135, 141));
 	background-size: 120% 120%;
 }
 
+.home,
+.habilidades,
+.projetos {
+	max-width: 1160px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .cabecalho {
+	background: rgba(2, 8, 26, 0.85);
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-evenly;
 	align-items: center;
 	padding: 30px 15px;
 }
@@ -38,6 +48,7 @@ body {
 .cabecalho .menu ul {
 	display: flex;
 	flex-direction: row;
+	gap: 10px;
 }
 
 .cabecalho .menu li a {
@@ -107,15 +118,16 @@ body {
 .home .container-foto .foto {
 	max-width: 450px;
 	border-radius: 50%;
+	box-shadow: 0 0 25px rgba(46, 61, 199, 0.884);
 }
 
 .home .container-foto img {
 	width: 100%;
-	border-radius: 50%;
+	border-radius: 80%;
 }
 
 .home .foto.sombra-interna {
-	background: linear-gradient(to right, #0c2249, #450961, #8300ee);
+	background: linear-gradient(to right, #4151dd, #2832c5, #2440df);
 	background-size: 180% 180%;
 	animation: gradient-animation 5s ease infinite;
 }
@@ -293,78 +305,10 @@ body {
 	backdrop-filter: blur(10px);
 }
 
-.rodape .container-rodape {
-	max-width: 1120px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	flex-wrap: wrap;
-	gap: 30px;
-	padding-bottom: 30px;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.rodape .logo-rodape a {
-	font-family: "Raleway", sans-serif;
-	font-size: 28px;
-	font-weight: 700;
-	color: #fff;
-	background: linear-gradient(90deg, #9443d8, #00eea2);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-
-.rodape .logo-rodape p {
-	font-size: 14px;
-	color: #a0aab8;
-	margin-top: 5px;
-}
-
-.rodape .links-rodape {
-	display: flex;
-	gap: 25px;
-}
-
-.rodape .links-rodape a {
-	font-size: 16px;
-	color: #e0e6ed;
-	transition: color 0.3s ease;
-}
-
-.rodape .links-rodape a:hover {
-	color: #00eea2;
-}
-
-.rodape .redes-rodape {
-	display: flex;
-	gap: 15px;
-}
-
-.rodape .redes-rodape a i {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	border: 1px solid rgba(255, 255, 255, 0.2);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	font-size: 18px;
-	color: #fff;
-	transition: all 0.3s ease;
-}
-
-.rodape .redes-rodape a i:hover {
-	background-color: #9443d8;
-	border-color: #9443d8;
-	color: #fff;
-	transform: translateY(-3px);
-	box-shadow: 0 5px 15px rgba(148, 67, 216, 0.4);
-}
-
 .rodape .copyright {
 	text-align: center;
 	padding-top: 20px;
+	padding-bottom: 30px;
 	font-size: 14px;
 	color: #a0aab8;
 }
